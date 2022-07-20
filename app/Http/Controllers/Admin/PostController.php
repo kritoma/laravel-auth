@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
@@ -19,7 +19,7 @@ class PostController extends Controller
     {
         $posts = Post::all();
 
-        return view('admin.post.index', compact('posts'));
+        return view('admin.posts.index', compact('posts'));
     }
 
     /**
